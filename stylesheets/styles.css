@@ -1,0 +1,262 @@
+/* =Reset CSS (v2.0) http://meyerweb.com/eric/tools/css/reset/
+-------------------------------------------------------------- */
+/*html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}*/
+
+/*HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+
+textarea {
+	overflow: auto;
+	vertical-align: text-top;
+}
+
+/* =Horizontal Rule
+-------------------------------------------------------------- */
+hr {
+	background: #ddd;
+	border: none;
+	clear: both;
+	color: #ddd;
+	float: none;
+	height: 1px;
+	width: 100%;
+}
+
+hr.space {
+	background: #fff;
+	color: #fff;
+}
+
+
+
+/******* MAIN STYLE START HERE ********/
+html, body {
+	height: 100% !important;
+}
+
+body {
+	/*background-color: #cfcfcf;*c8c8c8*//*bd4c13*/ /*e6e7e8*//*#054a97 f89d34*/
+	color: #454545;
+/*	font-family: Verdana, Helvetica, Arial, sans-serif;
+
+	font-family: fantasy,Helvetica,Arial,sans-serif;
+*/	font-family: 'Lucida Grande',Helvetica,Arial,sans-serif;
+	margin: 0 auto;
+	font-size: 15px;
+
+}
+.body_bg {
+	background: #cfcfcf url(../images/body_bg.jpg) top center no-repeat fixed;
+	
+}
+#outer_wrapper {
+	/*background-color: #fff;*/
+	margin: 0 auto;
+	/*padding-left: 0px;*/
+	width: 1000px;
+
+
+
+}
+.wrapper {
+	background-color: #fff;
+	margin: 0 auto;
+	padding: 0px 0px 20px 0px;
+	width: 1000px;
+	opacity:0.85;
+  	filter:alpha(opacity=85); /* For IE8 and earlier */
+
+}
+.top_header {
+	background-color: #fff;
+	height: 30px;
+	line-height: 30px;
+	color: #454545;
+	text-align: right;
+	padding-right: 20px;
+	margin-bottom: 50px;
+	width: 980px;
+}
+.top_header a:link { color: #454545; text-decoration: none; }
+.top_header a:hover { color: #454545; text-decoration: underline; }
+.top_header a:visited { color: #454545; text-decoration: underline; } 
+
+.top_header ul li a {
+	padding: 0px;
+	margin: 0px;
+}
+header {
+	/*background-color: #4b70c8;*/
+	/*background-color: #f89d34; - first choice*/
+	/*background-color: #f89d34;*/
+	/*background-image: url(..images/header_bg.jpg) x-repeat;*/
+	/*background: url(../images/header_bg.jpg) x-repeat;*/
+	background: url(../images/header_bg_a.jpg);
+	border-bottom: 1px dotted #423121;
+	color: #fff;
+	height: 80px;
+	line-height: 80px;
+	padding-right: 0px;
+	text-align: right;
+	width: 100%
+}
+
+.left_header {
+	color: #423121;
+	float: left;
+	font-size: 16px;
+	height: 80px;
+	line-height: 80px;
+	width: 350px;
+}
+
+.right_header {
+	float: right;
+	padding-right: 20px;
+	height: 80px;
+	line-height: 80px;
+	width: 300px;
+}
+.right_header h1 {
+	padding: 0px;
+	margin: 0px;
+	color: #423121;
+}
+/*Navigation*/
+
+nav {
+	/*background-color: #fff;f3f2f2*/
+	border-right: 1px solid #cfcfcf;
+	width: 199px;
+	padding: 20px;
+	min-height: 500px;
+	float: left;
+
+
+}
+
+nav a {
+	color: blue;
+	text-decoration: none;
+
+}
+
+.selected {
+	font-weight: bold;
+}
+
+ul, li {
+	list-style-type: none;
+}
+.content {
+	/*background-color: #fff;*/
+	color: #454545;
+	float: left;
+	padding: 0px 20px 20px 20px;
+	width: 720px;
+}
+
+.footer {
+	/*background-color: #f89d34;*/
+	background-color: #423121;
+	color: #fff;
+	float: left;
+	font-size: 12px;
+	margin: 0 auto;
+	height: 50px;
+	padding-right: 20px;
+	line-height: 50px;
+	width: 980px;
+}
+.left_footer {
+	float: left;
+	font-size: 12px;
+	height: 50px;
+	line-height: 50px;
+}
+
+
+.left_footer ul { 
+	margin: 0px;
+	padding: 0px;
+}
+
+.left_footer li { 
+	display: inline;
+	padding: 0px 5px 0px 0px;
+	margin-left: 20px; 
+}
+
+.left_footer a:link { color: #fff; text-decoration: none; }
+.left_footer a:hover { color: #fff; text-decoration: underline;}
+.left_footer a:visited { color: #fff; text-decoration: none;}
+
+.right_footer {
+	float: right;
+}
+
+.clear {clear: both;}
+
+/*Form Fields*/
+
+.errors {
+	color: #ff0000;
+}
+
+.message {
+	color: blue;
+	font-weight: bold;
+}
+
+a:link { color: #423121; text-decoration: none; }
+a:hover { color: #423121; text-decoration: underline; }
+a:visited { color: #423121; text-decoration: underline; } 
+
+.content ul {
+	margin: 0px;
+	padding: 0px;
+}
+.content li {
+	float: left;
+	clear: both;
+	margin-bottom: 10px; 
+	width: 500px;
+
+}
+.content li label {
+	padding: 10px 10px 10px 0px;
+	/*float: left;*/
+	width: 150px !important;
+
+}
+.content li input {
+	/*padding: 10px 10px 10px 0px;*/
+	/*float: left;*/
+	
+}
+
+.submit_btn {
+	background-color: #f89d34;
+	color: #fff;
+	padding: 5px;
+	font-size: 13px;
+}
+
+.submit_btn:hover{
+	cursor: pointer;
+}
+
+
+
+
+
+
